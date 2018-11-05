@@ -1,0 +1,29 @@
+{
+  "name": "indexed-db-helper",
+  "version": "1.0.0",
+  "description": "IndexedDB utility.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "debug": "npm-run-all -s clean:* debug:*",
+    "debug:ts": "tsc",
+    "release": "npm-run-all -s  clean:* release:*",
+    "release:ts": "tsc --sourceMap false",
+    "clean": "npm-run-all -s clean:*",
+    "clean:ts": "rimraf ./lib/",
+    "lint": "tslint './src/**/*.ts{,x}' --force -t stylish",
+    "lint-fix": "tslint './src/**/*.ts{,x}' --force -t stylish --fix"
+  },
+  "keywords": [
+    "indexeddb","utility"
+  ],
+  "author": "tkpphr",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {}
+}

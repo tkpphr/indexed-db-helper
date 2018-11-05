@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "outDir": "./lib",
+      "module": "commonjs",
+      "lib": ["es6","dom"],
+      "declaration":true,
+      "sourceMap": true,
+      "removeComments": true,
+      "noImplicitAny":true,
+      "noImplicitThis":true,
+      "noImplicitReturns": true,
+      "noUnusedLocals":true,
+      "noUnusedParameters": true,
+      "alwaysStrict": true,
+    },
+    "exclude": [
+      "./node_modules",
+      "./lib",
+      "./demo",
+    ]
+}
